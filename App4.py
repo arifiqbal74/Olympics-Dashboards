@@ -11,9 +11,9 @@ import streamlit as st
 import matplotlib.pyplot as plt
 
 # load data sets
-athletes = pd.read_csv('https://raw.githubusercontent.com/arifiqbal74/olympics-dashboard/main/athlete_events_till_150K.csv') 
-athletes2 = pd.read_csv('https://raw.githubusercontent.com/arifiqbal74/olympics-dashboard/main/athlete_events_from_150K.csv')
-regions = pd.read_csv('https://raw.githubusercontent.com/arifiqbal74/olympics-dashboard/main/noc_regions.csv')
+athletes = pd.read_csv('https://raw.githubusercontent.com/arifiqbal74/Olympics-Dashboards/main/athlete_events_till_150K.csv') 
+athletes2 = pd.read_csv('https://raw.githubusercontent.com/arifiqbal74/Olympics-Dashboards/main/athlete_events_from_150K.csv')
+regions = pd.read_csv('https://raw.githubusercontent.com/arifiqbal74/Olympics-Dashboards/main/noc_regions.csv')
 
 print(athletes.head())
 
