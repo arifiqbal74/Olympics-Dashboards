@@ -11,13 +11,15 @@ import streamlit as st
 import matplotlib.pyplot as plt
 
 # load data sets
-athletes = pd.read_csv(r'C:\Users\Asif Iqbal\Desktop\Python\assignments\Assignment 4\athlete_events.csv') 
-regions = pd.read_csv(r'C:\Users\Asif Iqbal\Desktop\Python\assignments\Assignment 4\noc_regions.csv')
+athletes = pd.read_csv('https://raw.githubusercontent.com/arifiqbal74/olympics-dashboard/main/athlete_events_till_150K.csv') 
+athletes2 = pd.read_csv('https://raw.githubusercontent.com/arifiqbal74/olympics-dashboard/main/athlete_events_from_150K.csv')
+regions = pd.read_csv('https://raw.githubusercontent.com/arifiqbal74/olympics-dashboard/main/noc_regions.csv')
 
 print(athletes.head())
 
 print(regions.head())
 
+append = athletes.append(athletes2)
 
 # Join the Dataframes on base of NOC Column
 athletes_df = athletes.merge(regions, how='left', on = 'NOC')
