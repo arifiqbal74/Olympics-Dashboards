@@ -106,7 +106,7 @@ st.line_chart(chart_data)
 
 st.header('Number of Medals Recieved by Each Athletes')
 chart_data = athletes_df['ID'].unique()
-chart_data.plot(kind="barh")
+chart_data.plot(kind='barh')
     
 
    
