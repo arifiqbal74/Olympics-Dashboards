@@ -104,5 +104,13 @@ chart_data = pd.DataFrame(
   columns=['GOLD', 'SILVER', 'BRONZE'])
 st.line_chart(chart_data)
 
+ st.header('Number of Medals Recieved by Each Athletes')
+  chart_data = pd.DataFrame(
+    columns=['ID']
+  chart_data.plot(kind="bar",figsize=(15,8))
+    
+    #plotdata.plot(kind="bar",figsize=(15, 8))
 
+   
+    
 
