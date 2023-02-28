@@ -123,10 +123,10 @@ st.table(Table.head(5))
 
 
 st.header('Number of Medals Over Age')
-    top_10_countries = athletes_df.Team.value_counts().sort_values(ascending=False).head(10)
-    plt.figure(figsize=(15,14))
-    plt.title ('')
-    plt.xlabel('Age')
-    plt.ylabel('Medals')
-    plt.hist(athletes_df.Age, bins=np.arange(10,80,20), color='orange',edgecolor='white');
-    st.pyplot()
+top_10_countries = athletes_df.Team.value_counts().sort_values(ascending=False).head(10)
+plt.figure(figsize=(15,14))
+plt.title ('')
+plt.xlabel('Age')
+plt.ylabel('Medals')
+plt.hist(athletes_df.Age, bins=np.arange(10,80,20), color='orange',edgecolor='white');
+st.pyplot()
