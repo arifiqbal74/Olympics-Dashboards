@@ -100,7 +100,7 @@ col5.metric('Bronze Medals', bronze_medal)
 # Creating Visuals
 
 st.header('Medals In Line Chart')
-    chart_data= pd.DataFrame(
+    chart_data = pd.dataFrame(
     np.random.rand(20,3),
     columns=['SILVER','BRONZE','GOLD'])
 
