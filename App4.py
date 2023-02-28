@@ -8,7 +8,7 @@ Created on Mon Feb 27 21:58:55 2023
 import pandas as pd
 import numpy as np
 import streamlit as st
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 #load data sets
 athletes = pd.read_csv('https://raw.githubusercontent.com/arifiqbal74/Olympics-Dashboards/main/athlete_events_till_150K.csv') 
