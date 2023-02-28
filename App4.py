@@ -127,5 +127,5 @@ top_10_countries = athletes_df.Team.value_counts().sort_values(ascending=False).
 plt.figure(figsize=(10,12))
 plt.xlabel('Age')
 plt.ylabel('Medals')
-plt.hist(athletes_df.Age, bins=10, edgecolor='black', width=10);
+plt.hist(athletes_df.Age, bins=10, color='blue' edgecolor='black', width=10);
 st.pyplot()
