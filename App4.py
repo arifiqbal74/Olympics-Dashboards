@@ -138,7 +138,7 @@ st.pyplot()
 st.header('Number of Medals Recieved in Each Season')
 seasons = ['Summer', 'Winter']
 medals = ['Gold', 'Silver', 'Bronze']
-plt.bar(seasons, medals, color = 'green')
+plt.bar(seasons, medals)
 plt.xlabel('Seasons')
 plt.ylabel('Medals')
 st.pyplot()
