@@ -71,21 +71,21 @@ st.title('Olympics Dashboard')
 Country = st.selectbox('Select Country', athletes_df['Team'])
 
 # the metric component takes the value you want to show and the change from a prev. value (it shows it as up/down arrow based on the change value)
-curr_count = 100
-inc_count = 10
+#curr_count = 100
+#inc_count = 10
 
-curr_medals = 50
-inc_medals = -4
+#curr_medals = 50
+#inc_medals = -4
 
-country_count = 14
-inc_count = 5
+#country_count = 14
+#inc_count = 5
 countries = athletes_df['Region'].nunique()
 gold_medals = 13732
 Silver_medal = 13116
 bronze_medal = 13295 
 
 # combining metrics and columns to create 
-st.header('Olympics - {}'.format(Country))
+#st.header('Olympics - {}'.format(Country))
 col1, col2, col3, col4, col5 = st.columns(5)
 col1.metric('Number of Olympians', athletes_df['ID'].nunique())
 col2.metric('Participating Countries', countries)
