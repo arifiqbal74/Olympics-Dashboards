@@ -135,4 +135,4 @@ medal = athletes_df['Medal']
 genders = athletes_df['Sex']
 
 plt.pie(medal, labels = genders)
-plt.show()
+st.pyplot()
