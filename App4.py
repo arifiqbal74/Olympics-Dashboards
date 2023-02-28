@@ -108,7 +108,7 @@ st.header('Number of Medals Recieved by Each Athletes')
 chart_data = pd.DataFrame({
   athletes_df['ID'].nunique()
 })
-  plt.barh()
+  plt.bar
   plt.xlabel('Athletes')
   plt.ylabel('Medals')
   plt.show()
