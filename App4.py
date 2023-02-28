@@ -135,8 +135,11 @@ plt.figure(figsize=(12,2.5))
 athletes_df.groupby('Sex')['Medal'].count().sort_values(ascending=False).plot(kind='pie',autopct='%0.05f%%')
 st.pyplot()
 
-medal_count = athletes_df['Medal'].value_counts()
+#medal_count = athletes_df['Medal'].value_counts()
 seasons = ['Summer', 'Winter']
+gold_medals = [13732]
+silver_medals = [13116]
+bronze_medals = [13295]
 st.header('Numbers of Medals Recieved in Each Season')
 plt.bar(seasons, gold_medals, label='Gold')
 plt.bar(seasons, silver_medals, label='Silver')
