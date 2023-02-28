@@ -107,7 +107,7 @@ st.line_chart(chart_data)
 st.header('Number of Medals Recieved by Each Athletes')
 chart_data = pd.DataFrame(
   columns=['ID'].nunique()
-chart_data.plot(kind="barh",figsize=(15,8))
+chart_data.plot(kind="barh")
     
 
    
