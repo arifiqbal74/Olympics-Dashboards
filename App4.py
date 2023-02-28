@@ -137,9 +137,9 @@ st.pyplot()
 
 medal_count = athletes_df['Medal'].value_counts()
 st.header('Numbers of Medals Recieved in Each Season')
-plt.rcParams['figure.figsize']=[14,8]
+#plt.rcParams['figure.figsize']=[14,8]
 colors = ['green','yellow','blue']
-plt.bar(x = medal_count.index, height = medal_count.values, color = colors)
+plt.bar(x=medal_count.index, height=medal_count.values, color=colors)
 
 #plt.title('medal_count')
 plt.xlabel('Seasons')
