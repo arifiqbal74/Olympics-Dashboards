@@ -104,14 +104,14 @@ chart_data = pd.DataFrame(
   columns=['GOLD', 'SILVER', 'BRONZE'])
 st.line_chart(chart_data)
 
-medal_count = data['Medal'].value_counts()
+medal_count = athletes_df['Medal'].value_counts()
 st.header('Numbers of Medals Recieved by Each Athletes')
 st.set_option('deprecation.showPyplotGlobalUse', False)
 plt.rcParams['figure.figsize']=[14,8]
 colors = ['green','yellow','blue']
 fig = plt.bar(x=medal_count.index, height=medal_count.values, color=colors)
     
-plt.title('medal_count')
+#plt.title('medal_count')
 plt.xlabel('Medals')
 plt.ylabel('Athletes')
 st.pyplot()
