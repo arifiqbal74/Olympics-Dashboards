@@ -85,7 +85,7 @@ Silver_medal = 13116
 bronze_medal = 13295 
 
 # combining metrics and columns to create 
-st.header('Olympics - {}'.format(year))
+st.header('Olympics - {}'.format(Country))
 col1, col2, col3, col4, col5 = st.columns(5)
 col1.metric('Number of Olympians', athletes_df['ID'].nunique())
 col2.metric('Participating Countries', countries)
