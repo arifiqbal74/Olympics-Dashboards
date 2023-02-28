@@ -68,7 +68,12 @@ import streamlit as st
 st.title('Olympics Dashboard')
 
 # use Country to filter data
-Country = st.selectbox('Select Country', athletes_df['Team'])
+Countries = athletes_df['Team'].unique()
+selection= st.selectbox('Select Country', athletes_df['Team']
+subset=athletes_df[athletes_df['Team']==selection]
+st.dataframe(subset)
+                        
+#Country = st.selectbox('Select Country', athletes_df['Team'])
 
 # the metric component takes the value you want to show and the change from a prev. value (it shows it as up/down arrow based on the change value)
 #curr_count = 100
