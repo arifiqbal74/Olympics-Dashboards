@@ -131,6 +131,6 @@ plt.hist(athletes_df.Age, bins=10, edgecolor='black', width=10);
 st.pyplot()
 
 st.header('Number of Medals Bifurcated by Gender')
-plt.figure(figsize=(15,2.7))
+plt.figure(figsize=(12,2.5))
 athletes_df.groupby('Sex')['Medal'].count().sort_values(ascending=False).plot(kind='pie',autopct='%0.05f%%')
 st.pyplot()
