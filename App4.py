@@ -134,3 +134,12 @@ st.header('Number of Medals Bifurcated by Gender')
 plt.figure(figsize=(12,2.5))
 athletes_df.groupby('Sex')['Medal'].count().sort_values(ascending=False).plot(kind='pie',autopct='%0.05f%%')
 st.pyplot()
+
+st.header('Number of Medals Recieved in Each Season')
+seasons = athletes_df['Summer', 'Winter']
+medals = athletes_df['Gold', 'Silver', 'Bronze']
+plt.figure(figsize=(10,12))
+plt.xlabel('Seasons')
+plt.ylabel('Medals')
+plt.bar(seasons, medals, color = 'green') 
+st.pyplot()
