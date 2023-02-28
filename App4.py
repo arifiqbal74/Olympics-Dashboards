@@ -129,3 +129,10 @@ plt.xlabel('Age')
 plt.ylabel('Medals')
 plt.hist(athletes_df.Age, bins=10, edgecolor='black', width=10);
 st.pyplot()
+
+st.header('Number of Medals bifurcated by Gendre')
+medal = athletes_df['Medal']
+genders = athletes_df['Sex']
+
+plt.pie(medal, labels = genders)
+plt.show()
