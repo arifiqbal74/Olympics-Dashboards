@@ -99,10 +99,17 @@ col5.metric('Bronze Medals', bronze_medal)
 
 # Creating Visuals
 
-st.header('Number of Medals Over Years')
-    chart_data = pd.DataFrame(
+st.header('Medals In Line Chart')
+    chart_data= pd.DataFrame(
     np.random.rand(20,3),
-    columns=['GOLD','SILVER','BRONZE'])
-    
+    columns=['SILVER','BRONZE','GOLD'])
+
     st.line_chart(chart_data)
+
+#st.header('Number of Medals Over Years')
+ #   chart_data = pd.DataFrame(
+  #  np.random.rand(20,3),
+   # columns=['GOLD','SILVER','BRONZE'])
+    
+    #st.line_chart(chart_data)
 
