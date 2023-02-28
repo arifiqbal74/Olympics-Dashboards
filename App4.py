@@ -70,8 +70,8 @@ st.title('Olympics Dashboard')
 # use Country to filter data
 Countries = athletes_df['Team'].unique()
 selection= st.selectbox('Select Country', athletes_df['Team']
-subset=athletes_df[athletes_df['Team']==selection]
-st.dataframe(subset)
+#subset=athletes_df[athletes_df['Team']==selection]
+#st.dataframe(subset)
                         
 #Country = st.selectbox('Select Country', athletes_df['Team'])
 
