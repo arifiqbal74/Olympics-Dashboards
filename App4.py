@@ -111,7 +111,7 @@ plt.rcParams['figure.figsize']=[14,8]
 colors = ['green','yellow','blue']
 fig = plt.bar(x=medal_count.index, height=medal_count.values, color=colors)
     
-#plt.title('medal_count')
+plt.title('medal_count')
 plt.xlabel('Medals')
 plt.ylabel('Athletes')
 st.pyplot()
