@@ -9,6 +9,8 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 import matplotlib.pyplot as plt
+import plotly.express as px
+import seaborn as sns
 
 #load data sets
 athletes = pd.read_csv('https://raw.githubusercontent.com/arifiqbal74/Olympics-Dashboards/main/athlete_events_till_150K.csv') 
