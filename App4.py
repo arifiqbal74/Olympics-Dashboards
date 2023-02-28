@@ -68,7 +68,6 @@ import streamlit as st
 st.title('Olympics Dashboard')
 
 # use Country to filter data
-#year = st.selectbox('Select Country', athletes_df['Team'])
 countries = athletes_df['Team'].unique()
 selection = st.selectbox('Select Country', countries)
 subset = athletes_df[athletes_df['Team'] == selection]
@@ -98,7 +97,12 @@ col3.metric('Gold Medals', gold_medals)
 col4.metric('Silver Medals', Silver_medal)
 col5.metric('Bronze Medals', bronze_medal)
 
+# Creating Visuals
 
-#subset = athletes_df[athletes_df['Year'] == year]
-#st.dataframe(subset)
+st.header('Number of Medals Over Years')
+    chart_data= pd.DataFrame(
+    np.random.rand(20,3),
+    columns=['GOLD','SILVER','BRONZE'])
+    
+    st.line_chart(chart_data)
 
