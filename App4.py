@@ -115,6 +115,10 @@ st.line_chart(chart_data)
 #plt.ylabel('Athletes')
 #plt.show()
 
-
+top_5_sports = athletes_df.groupby('Sport')['Medal'].value_counts().sort_values(ascending=False)
+st.header('Top 5 Medals Recieved in Each Sports')
+Table = pd.DataFrame(top_5_sports)
+Table.head(5)
+st.table(Table.head(5))
 
 
