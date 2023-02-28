@@ -111,7 +111,7 @@ st.header('Medals Count')
 st.set_option('deprecation.showPyplotGlobalUse', False)
 plt.rcParams['figure.figsize']=[12,6]
 colors=['green','yellow','blue']
-fig=plt.bar(x=medal_count.index, height=medal_count.values, color=colors)
+plt.bar(x=medal_count.index, height=medal_count.values, color=colors)
     
 plt.title('medal_count')
 plt.xlabel('Medals')
