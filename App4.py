@@ -68,22 +68,18 @@ import streamlit as st
 st.title('Olympics Dashboard')
 
 # use Country to filter data
-Countries = athletes_df['Team'].unique()
-selection= st.selectbox('Select Country', athletes_df['Team']
-#subset=athletes_df[athletes_df['Team']==selection]
-#st.dataframe(subset)
+year = st.selectbox('Select Country', athletes_df['Team'])
                         
-#Country = st.selectbox('Select Country', athletes_df['Team'])
 
 # the metric component takes the value you want to show and the change from a prev. value (it shows it as up/down arrow based on the change value)
-#curr_count = 100
-#inc_count = 10
+curr_count = 100
+inc_count = 10
 
-#curr_medals = 50
-#inc_medals = -4
+curr_medals = 50
+inc_medals = -4
 
-#country_count = 14
-#inc_count = 5
+country_count = 14
+inc_count = 5
 countries = athletes_df['Region'].nunique()
 gold_medals = 13732
 Silver_medal = 13116
@@ -99,6 +95,6 @@ col4.metric('Silver Medals', Silver_medal)
 col5.metric('Bronze Medals', bronze_medal)
 
 
-subset = athletes_df[athletes_df['Team']==selection]
+subset = athletes_df[athletes_df['Year'] == year]
 st.dataframe(subset)
 
